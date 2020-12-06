@@ -1,2 +1,0 @@
-eclipse.preferences.version=1
-libraries=["DFPlayer Mini Mp3 by Makuna",{"package"\:"arduino","platform"\:"avr","library"\:"EEPROM"},"JC_Button",{"package"\:"arduino","platform"\:"avr","library"\:"SPI"},{"package"\:"arduino","platform"\:"avr","library"\:"SoftwareSerial"}]
