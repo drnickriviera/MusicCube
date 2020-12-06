@@ -1,10 +1,5 @@
 #include "MusicCube.h"
 
-/***************************************
-/* settings                           */
-/**************************************/
-#define NumberOfSongs 10      /* 1..99 */
-
 
 /***************************************
 * MusicCube state machine definitions    *

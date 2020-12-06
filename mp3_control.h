@@ -30,10 +30,6 @@ public:
   }
 };
 
-#define VolumeMin 0
-#define VolumeMax 30
-#define VolumeInit 10
-
 #define NumOfNotifications 100
 
 extern void MP3_INIT();

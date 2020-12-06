@@ -9,4 +9,7 @@
 /* pin settings */
 #include "pin_settings.h"
 
+/* Cube settings */
+#include "MusicCubeSettings.h"
+
 #endif

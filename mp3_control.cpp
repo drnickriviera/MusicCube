@@ -1,6 +1,5 @@
 #include "mp3_control.h"
 
-
 SoftwareSerial MP3SoftwareSerial(2, 3); // RX, TX
 static DFMiniMp3<SoftwareSerial, Mp3Notify> MP3(MP3SoftwareSerial);
 
