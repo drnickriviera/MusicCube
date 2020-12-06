@@ -1,3 +1,11 @@
+# Folders
+.cproject/
+build/
+.settings/
+
+# Eclispe
+.project
+
 # Prerequisites
 *.d
 
