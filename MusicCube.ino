@@ -36,7 +36,7 @@ void setup()
   MP3_INIT();
 
   /* init state machine */
-  Set_cube_state(StartNewSong);
+  Set_cube_state(WaitForNewInput);
 }
 
 
@@ -64,6 +64,7 @@ void STATE_MACHINE()
 }
 
 void STATE_TRANSITIONS(){
+
 	switch(Get_cube_state())
 	  {
 	  case WaitForNewInput:
@@ -73,7 +74,6 @@ void STATE_TRANSITIONS(){
 		  }
 		  break;
 	  case StartNewSong:
-		  Set_cube_state(WaitForNewInput);
 		  break;
 	  default:
 		// Should never occur so restart
@@ -90,9 +90,9 @@ void loop()
 
     INPUT_PROCESSING();
 
-    STATE_MACHINE();
-
     STATE_TRANSITIONS();
+
+    STATE_MACHINE();
 
     Update_cube_state_ll();
   }
