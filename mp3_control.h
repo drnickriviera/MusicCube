@@ -2,6 +2,7 @@
 #define mp3_control_h
 
 #include "FirstInclude.h"
+#include "button_control.h"
 
 // implement a notification class,
 // its member methods will get called
@@ -30,9 +31,14 @@ public:
   }
 };
 
+extern uint8_t CURRENT_FOLDER;
+
 #define NumOfNotifications 100
+#define Album_selected()  (CURRENT_FOLDER > 0)
 
 extern void MP3_INIT();
 extern void START_NEW_TRACK();
+extern void SELECT_ALBUM();
+extern void PLAY_ALBUM();
 #endif
 

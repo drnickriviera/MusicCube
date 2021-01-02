@@ -7,7 +7,7 @@
 #define task_h
 
 /* DEFINES */
-#define Task_length 10000
+#define Task_length 10
 
 /* GLOBAL VARIABLES */
 unsigned long START_TIME = 0;
